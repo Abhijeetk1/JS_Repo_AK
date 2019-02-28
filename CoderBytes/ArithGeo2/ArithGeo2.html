@@ -1,0 +1,53 @@
+<html>
+	<body>
+		<script>
+
+
+function ArithGeoII(arr) 
+{ 
+	var i = 0;
+	var j = 0;
+	var arith = false;
+	var geo = false;
+	while (i <= arr.length - 3)
+	{
+		if(arr[i] - arr[i + 1] !== arr[i + 1] - arr[i + 2])
+		{
+			arith = false;
+			break;
+		}
+		arith = true;
+		i++;
+	}
+	
+	if (arith == true)
+	{
+		return "Arithmetic";
+	}
+	else
+	{
+		i = 0;
+		while (i <= arr.length - 3)
+		{
+			if(arr[i] / arr[i + 1] !== arr[i+ 1] / arr[i + 2])
+			{
+				geo = false;
+				break;
+			}
+			geo = true;
+			i++;
+		}
+		if (geo == true)
+		{
+			return "Geometric";
+		}
+		else
+		{
+			return -1;
+		}
+	}
+}
+
+		</script>
+	</body>
+<html>

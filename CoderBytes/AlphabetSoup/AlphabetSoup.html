@@ -1,0 +1,48 @@
+<html>
+	<body>
+		<script>
+
+/*
+function AlphabetSoup(str) 
+{ 
+
+var alpha = [];
+var cc = [];
+var strout = [];
+
+for( i = 0; i < str.length-1; i++)
+{
+
+	cc += str.charCodeAt(i);	
+
+}
+
+alpha = cc.sort(); 
+
+for( j = 0; j <= str.length-1; j++)
+{
+	strout += String.fromCharCode(alpha[j]);
+}
+
+return strout;
+}
+
+*/
+
+function AlphabetSoup(str)
+{
+
+	var choppedstr = [];
+	var alpha = [];
+
+	choppedstr = str.split("");
+	alpha = choppedstr.sort();
+	alpha = alpha.join("");
+	return alpha;
+}
+alert(AlphabetSoup("abhijeet"));
+
+
+		</script>
+	</body>
+</html>

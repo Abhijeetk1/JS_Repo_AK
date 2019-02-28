@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <script>
+
+
+var flag;
+function PowersofTwo(num) {
+
+
+	if(num / 2 == 1 )
+	{
+	   	flag = true;
+	}
+	else if( num % 2 == 0)
+	{
+		PowersofTwo(num/2);
+	}
+	else
+	{
+		flag = false;
+	}
+	return flag;
+}
+
+
+    </script>
+  </body>
+</html>
+

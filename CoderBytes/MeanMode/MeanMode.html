@@ -1,0 +1,49 @@
+
+<html>
+	<body>
+		<script>
+
+
+
+
+function MeanMode(arr) 
+{ 
+
+	var sum = 0;
+	
+	for(i = 0; i <= arr.length-1; i++)
+	{
+		sum += arr[i];
+	}
+	var mean = sum / arr.length;
+	
+
+    var modeMap = {};
+    var maxEl = arr[0]
+    var maxCount = 1;
+    for(var i = 0; i < arr.length; i++)
+    {
+    	var el = arr[i];
+    	if(modeMap[el] == null)
+    		modeMap[el] = 1;
+    	else
+    		modeMap[el]++;	
+    	if(modeMap[el] > maxCount)
+    	{
+    		maxEl = el;
+    		maxCount = modeMap[el];
+    	}
+    }
+   if (mean == maxEl)
+   {
+   	return 1;
+   } 
+   else return 0;
+
+}
+
+alert(MeanMode([4,3,2,3,1]));
+         
+		</script>
+	</body>
+</html>

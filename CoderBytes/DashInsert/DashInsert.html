@@ -1,0 +1,26 @@
+<html>
+	<body>
+		<script>
+
+
+function DashInsert(num) { 
+	num = num.toString();
+	num = num.split("");
+	
+
+for(i = 0; i < num.length - 1; i++)
+{
+	if(num[i] % 2 !== 0 && num[i+1] % 2 !== 0)
+	{
+		num[i] += "-";
+	}
+}
+
+num = num.join("");
+return num;
+     
+}
+
+		</script>
+	</body>
+<html>

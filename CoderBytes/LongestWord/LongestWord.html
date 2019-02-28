@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+    <script>
+
+function LongestWord(sen) 
+{
+    var choppedSen = sen.split(" ");
+    var sortedSen = new Array();
+    sortedSen = choppedSen.sort( function(a,b) {return b.length - a.length} );
+    //docuement.write(sortedSen); 
+    //alert(sortedSen);
+    //console.log(sortedSen);
+   return sortedSen[0];
+  }
+
+alert(LongestWord("Arguement goes where"));
+    </script>
+
+  </body>
+</html>
+
+// DID NOT ACCOMODATE FOR PUNCTUATION 9/10

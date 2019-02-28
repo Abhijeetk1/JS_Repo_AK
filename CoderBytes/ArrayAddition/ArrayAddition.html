@@ -1,0 +1,56 @@
+<html>
+	<body>
+		<script>
+
+function ArrayAdditionI(arr) 
+{ 
+	var sortedarr = [];
+	
+	sortedarr = arr.sort(function(a, b){return a-b});
+
+
+	var hval = sortedarr[sortedarr.length-1];
+	
+	var total = 0;
+	
+
+	for (i = 0; i <= sortedarr.length-2; i++)
+	{
+		total += sortedarr[i];
+	}
+	if (hval == total)
+	{
+		return true;
+	}
+	else
+	{
+		return false
+	}
+
+
+	for (i = 0; i <= sortedarr.length-2; i++)
+	{
+		if(total += sortedarr[i] == hval)
+		{
+			return true
+		}
+	}
+
+
+	for (i = sortedarr.length-2; i >= 0; i--)
+	{
+		if(total += sortedarr[i] == hval)
+		{
+			return true
+		}
+	}
+
+	return false;
+
+
+}
+
+alert(ArrayAdditionI([1,3,2,4]));
+		</script>
+	</body>
+<html>

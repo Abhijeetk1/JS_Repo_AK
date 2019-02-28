@@ -1,0 +1,37 @@
+
+
+<html>
+  <body>
+    <script>
+
+function VowelCount(str) 
+{ 
+
+	var choppedstr = [];
+	var count= 0;
+	var choppedstr = str.split("");
+	
+	for( i = 0; i <= str.length-1; i++)
+	{
+		if (choppedstr[i] == "a" || choppedstr[i] == "e" || choppedstr[i] == "i" || choppedstr[i] == "o" || choppedstr[i] == "u")
+		{
+			count ++;
+		}
+		else if (choppedstr[i] == "A" || choppedstr[i] == "E" || choppedstr[i] == "I" || choppedstr[i] == "O" || choppedstr[i] == "U")
+		{
+			count ++;
+		}
+
+	}
+
+	  
+	return count; 
+	         
+}
+alert(VowelCount("AbhijEet is CoOL"))
+
+
+    </script>
+  </body>
+</html>
+

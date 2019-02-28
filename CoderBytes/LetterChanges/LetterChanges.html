@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+
+    <script>
+
+function LetterChanges(str)
+{
+	var strOut = "";
+	for(i = 0; i <= str.length-1; i++)
+	{
+		if (str[i] == "z" || str[i] == "Z")
+		{
+			strOut += "A";
+		}
+		else 
+		{
+			var cc = str.charCodeAt(i);
+			if ((cc >= 65 && cc <=90) || (cc >= 97 && cc <=122))
+			{
+				var t = String.fromCharCode(cc + 1);
+				if  ("eiou".indexOf(t) >= 0)
+				{
+					strOut += t.toUpperCase();
+				}
+				else
+				{
+					strOut += t;
+				}
+			}
+			else
+			{
+				strOut = String.fromCharCode(cc);
+			}
+		} 
+
+
+
+
+	}
+return strOut;
+}
+
+alert(LetterChanges("Hello World!"))
+/*
+var letter = "Zz";
+var num = 67;
+alert(String.fromCharCode(num));
+alert(letter.charCodeAt(0));
+
+function LetterChanges(str) { 
+  var vowel = "a", "e", "i", "o", "u";
+  LetterChanges.filter(function(x)
+  {
+  	for(i=0; i<=str.length; i++)
+  	{	
+  		str.match(a/e/i/o/u) = str.upper(i);
+
+
+  		
+    }
+ }
+  return str; 
+         
+}
+alert(LetterChanges("Hello");
+
+
+	  	if (str.i == vowel)
+	  	{
+	  		str.x = str.upper();
+	  		return str.x;
+	  	}
+	  	else
+	  	{
+	  		str.x = str.index;
+	  		return str.x; 
+	  	}
+
+*/
+    </script>
+  </body>
+</html>
+
